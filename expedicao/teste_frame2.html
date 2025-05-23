@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão Vertical - Lado Maior</title>
+
+    <style>
+        .container {
+            display: flex;
+            height: 100vh; /* 100% da altura da viewport */
+        }
+
+        .left {
+            width: 30%; /* 30% da largura total */
+            background-color: lightblue;
+        }
+
+        .right {
+            flex: 1; /* O restante do espaço disponível */
+           /* background-color: lightgreen;*/
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <!-- Conteúdo do lado esquerdo (menor) -->
+        <h1><a href="login.php" target="right">Login fabrica</a> </h1>
+    </div>
+    <div class="right" id="pag2">
+        <!-- Conteúdo do lado direito (maior) -->
+        <object data="../index2.php" width="1200" height="700" title="Página Secundária"></object>
+
+    </div>
+</div>
+
+</body>
+</html>

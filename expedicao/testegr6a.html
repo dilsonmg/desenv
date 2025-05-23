@@ -1,0 +1,47 @@
+
+ <meta name="robots" content="noindex" />
+<meta name="googlebot" content="noindex" />
+<meta name="googlebot-news" content="noindex" />
+<meta name="googlebot" content="noindex">
+<meta name="googlebot-news" content="nosnippet">
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+	
+	/////////////////////////////////////////////// parametros do grafico //////////////////////////////////////
+ google.charts.load('current', {'packages':['corechart']});
+ 
+ google.charts.setOnLoadCallback(drawVisualization);
+
+ function drawVisualization() {
+		 //alert(pgr1);
+ 
+	      //var data = google.visualization.arrayToDataTable([['Mes', 'Previsto', 'Realizado','variacao'],['Jan',5639.97,2630.07,3009.90],['Fev',4237.12,1861.83,2375.29],]);
+
+				  var data = google.visualization.arrayToDataTable([
+				  ['Mes', 'Produção', 'Perda','Variação'],['Jan',178.974,49.926,27.89567199705],['Fev',178.974,16.626,9.2896174863388],['Mar',536.922,66.678,12.418563590242],['Mai',536.922,88.712,16.522325402945],['Jun',715.896,17.970,2.5101411378189],['Jul',482.788,11.428,2.3670845174279],]);
+				 
+
+        var options = {
+          title : 'Producao anual em KG por Linha de produto -  Elanco',
+          vAxis: {title: 'Totais'},
+          hAxis: {title: 'Ano'},
+          seriesType: 'bars',
+          series: {4: {type: 'line'}}
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    ///////////
+	  
+    </script>
+
+  </head>
+  <body>
+    <div id="chart_div" style="width: 1000px; height: 300px;"></div>
+  </body>
+</html>

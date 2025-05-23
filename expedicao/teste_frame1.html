@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisão Vertical</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .left, .right {
+            flex: 1;
+        }
+
+        .left {
+            height: 10%;
+            height: 10vh; /* 100% da altura da viewport */
+
+            background-color: lightblue;
+        }
+
+        .right {
+            height: 90%;
+
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <!-- Conteúdo da parte esquerda -->
+        <h1>Parte Esquerda</h1>
+    </div>
+    <div class="right">
+        <!-- Conteúdo da parte direita -->
+        <h1>Parte Direita</h1>
+                <object data="../index2.php" width="600" height="400" title="Página Secundária"></object>
+    </div>
+</div>
+
+</body>
+</html>

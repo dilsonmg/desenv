@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de uso do canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <canvas id="myCanvas2" width="400" height="400"></canvas>
+
+    <script>
+        // Obtém o elemento canvas
+        var canvas = document.getElementById("myCanvas");
+        var canvas2 = document.getElementById("myCanvas2");
+
+        // Obtém o contexto de renderização 2D
+        var context = canvas.getContext("2d");
+        var context2 = canvas2.getContext("2d");
+
+        // Desenha um retângulo no canvas
+        context.fillStyle = "red";
+        context.fillRect(5, 5, 10, 10);
+
+        context2.fillStyle = "blue";
+        context2.fillRect(50, 50, 100, 100);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+/////////////////////////////////////////////// parametros do grafico //////////////////////////////////////
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+		 ['Item', 'Produção'],
+           ['1550 - HJ EMULSAO 150',8000],['1551 - HJ EMULSAO 100',6000],['3269 - KAMORAN 10 KG',3600],['3274 - CORSTAN 10 KG',1200],['3277 - KAMORAN WP 10 KG',1200],['4369 - KAMORAN 10 KG EXPORTACAO MARITIMO',3600],['5100 - FILTERPOL',972],        ]);
+
+
+        var options = {
+          chart: {
+            title: 'Totais Produzidos',
+            subtitle: 'Valores em Quilos',
+			isStacked: true
+          },
+          bars: 'horizontal', // Required for Material Bar Charts.
+		  FontSize:2,
+		  legend: { position: "vertical" },
+		   bar: { groupWidth: '90%' },
+		  		  isStacked: true,series: {4: {type: 'line'}}
+				  
+        };
+
+
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+		
+ }
+ </script>
+  </head>
+  <body>
+    <div id="barchart_material" style="width: 600px; height: 300px;"></div>
+  </body>
+</html>

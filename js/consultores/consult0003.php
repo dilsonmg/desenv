@@ -1,0 +1,248 @@
+<?php
+header('Content-type: text/html; charset=ISO-8859-1');
+session_start();
+
+$btn = 's';
+$ms = $_GET ["bt"];
+if (isset($ms) && $ms <> "" ){ $btn = 'n'; }
+
+function formata_data($data)  
+ {  
+	  if ($data <> ""){
+		  //recebe o par?metro e armazena em um array separado por -  
+		  $data = explode('-', $data);  
+		  //armazena na variavel data os valores do vetor data e concatena /  
+		  $data = $data[2].'/'.$data[1].'/'.$data[0];  
+		  //retorna a string da ordem correta, formatada  
+		  }
+	  return $data;  
+ }  
+
+
+function formata_data2($data)  
+ {  
+	  if ($data <> ""){
+		  //recebe o par?metro e armazena em um array separado por -  
+		  $data = explode('/', $data);  
+		  //armazena na variavel data os valores do vetor data e concatena /  
+		  $data = $data[2].'/'.$data[1].'/'.$data[0];  
+		  //retorna a string da ordem correta, formatada  
+		  }
+	  return $data;  
+ }  
+
+
+$lgd = 0;
+$opcm = 0;
+if(isset($_SESSION['en'])){// verifica se existe a varavel session
+  
+          if($_SESSION['en'] == 1){
+              	header("Location: login.php"); }   
+
+   }else{
+
+         echo("Voce nao esta logado !!");
+              	header("Location: loginx.php"); 
+
+   }
+include 'conectabco.php';
+
+mysql_query("SET NAMES 'iso-8859-1'");
+mysql_query("SET character_set_connection=iso-8859-1");
+mysql_query("SET character_set_client=iso-8859-1");
+mysql_query("SET character_set_results=iso-8859-1");
+
+$hoje = date("d/m/Y");
+$data_req = $hoje; 
+$a = 0;
+$b = 0;
+
+$responsavel = "dilson magalhaes";
+
+$id = $_GET ["id"];
+
+$habilit = "S";
+$p4 = "";
+$p41 = "";
+
+if (isset($id_formprof)){
+	if ($id_formprof <> "" ){
+		// $p4 = " and a.id_eqpto like '%" . $id_eqpto1 ."%'" ; 
+		 $p4 = " and a.id_formprof = '" . $id_formprof ."'" ; 
+		 }}
+
+
+$rs2 = mysql_query("select a.* from tb_formprof a
+  where a.id_formprof > 0 " . $p4 . $p41 . "
+  order by a.descr_formprof ");				  
+    $b = mysql_num_rows($rs2);
+
+		  	
+$rs34 = mysql_query("select a.* from tb_formprof a  order by a.descr_formprof");				  	
+
+
+if (isset($id)){
+
+    $rs1 = mysql_query("SELECT a.* FROM tb_formprof a where a.id_formprof =". $id);
+	
+	
+    $a = mysql_num_rows($rs1);
+   
+     if ($a > 0 ) {
+         $habilit = "N";
+         $rs1 = mysql_query("SELECT a.* FROM tb_formprof a where a.id_formprof =". $id);
+    	 $row1 = mysql_fetch_assoc($rs1);
+		 $id_formprof        = $id;
+		 $id_formprof        = $row1['id_formprof'];
+ 	     $descr_formprof     = $row1['descr_formprof'];  
+	  }
+	 
+ }
+ 
+
+
+?>
+
+<!DOCTYPE html>
+<meta name="robots" content="noindex" />
+<meta name="googlebot" content="noindex" />
+<meta name="googlebot-news" content="noindex" />
+<meta name="googlebot" content="noindex">
+<meta name="googlebot-news" content="nosnippet">
+
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<head>
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecod.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+	<title>consult0003 - Formação Profissional</title>
+    <link rel="stylesheet" href="../css/qreal.css">
+	<script type='text/javascript' src="../js/funcconsult.js"   charset="ISO-8859-1"></script>
+   
+<script>    
+if (window.opener && !window.opener.closed) {
+			window.opener.location.reload();
+			}
+			
+function resetForm(){
+ //   if (confirm("Confirma limpeza do formulario  ?")){
+	      // document.location.href='excluieq.asp'
+		  document.form1.descr_formprof.value="";
+   	   	  document.form1.action="consult0003.php";
+		  document.form1.submit();  
+		  return true;
+		//  }
+
+}
+
+function atualiza(){
+   resetForm();
+   document.form1.submit();	
+}
+
+function setFocus(focoreb) {
+
+  document.getElementById(focoreb).focus(); 
+}
+
+</script>
+    
+</head> 
+<body> 
+<center>
+<form name="form1" method="post" enctype="multipart/form-data"> 
+<input type=hidden name="id" value="<?php echo("$id");?>">
+<input readonly type=hidden name=x size=3 maxlength=3 value="250">
+
+
+<table width="98%" border="0">
+      <tr>
+        <th align="left" ><img src="../imagens/logoqrred.jpg" border="0"></th>
+         <th align="center"><h1>Forma&ccedil;&atilde;o Profissional - 
+        <?php
+	echo($_SESSION['id_formprof']);
+		  ?>
+      </h1></th>
+
+        <th align="right"><img src="../imagens/tecladoclaro.png" ></th>
+      </tr>
+</table>      
+<table width="98%" border="0">      
+      <tr>
+        <th align="right">Descri&ccedil;&atilde;o</th>
+        <th align="left" colspan="2">
+        <input type="text" id = "descr_formprof" required name="descr_formprof"  maxlength="80" size="80" placeholder="informe a descrição"  value="<?php echo($descr_formprof); ?>" class="search-input5" autofocus >
+        </th>
+        </tr>
+
+      <tr>
+        <th colspan="4" align="center">
+        <?php if ($btn == 's'){ ?>
+
+          <input type="button" name="gravar"  onClick="validaformacao();" value="Gravar"  class="search-submit2" />
+          <input type="reset" name="button" id="button" value="Limpar Formulario" onclick="resetForm();"  class="search-submit2">
+          <input type="button" name="Submit4"  onclick="excluirformacao(<?php echo($id); ?>);" value="Excluir"  class="search-submit2" />
+       <?php } ?>
+         <input type="button" onClick="sair();" value="Sair"  class="search-submit2">
+        </th>
+        </tr>
+        
+              <tr bgcolor="#9D9DFF">
+        <th colspan="4" align="center">Registros Gravados</th>
+      </tr>
+      <tr>
+        <th colspan="4" align="left">Selecione  
+          <select name="id_formprof"  onChange="atualiza();" class="search-input3">
+            <option value="">Selecione </option>
+            <?php while($row33=mysql_fetch_assoc($rs34)){ ?>
+            <option value="<?php print($row33['id_formprof']);?>"
+				  <? if($row33['id_formprof'] == $id_formprof ) {?>selected <? } ?>				
+				 ><?php print($row33['descr_formprof']);?></option>
+            <?php }?>
+        </select></th>
+      </tr>
+
+            <!--tr >
+              <th colspan="7" align="center"><h1>Ficha de Manuten??o dos Equipamentos</h1></th>
+            </tr -->
+            <tr align="center">
+              <td colspan="4" align="center">
+              <table width="80%" border="1" bordercolor="#CCCCCC">
+                <tr bgcolor="#D2D2FF" >
+                  <th >id</th>
+                  <th >Descri&ccedil;&atilde;o</th>
+                </tr>
+     <?php
+//echo($b);
+	 if ($b > 0){
+       $bg = 0;
+	  
+	  while($row=mysql_fetch_array($rs2)){ 
+       if($bg == 1){
+			   	    $bgc = "bgcolor=#eee";  $bg = 0;}
+			   else{ $bgc = ''; $bg = 1;}	
+			  
+	   echo('<tr ' . $bgc .'>');?>
+
+                <td >
+           <a href="consult0003.php?id=<?php echo ($row['id_formprof']);?>"><?php echo ($row['id_formprof']);?></a></td>
+                <td ><?php echo ($row['descr_formprof']);?></td>
+                </tr>
+          <?php 
+		   } 
+	     }
+		  ?>      
+         </table>
+              
+         </td>
+         </tr>
+           
+    </table>     
+</form> 
+</center>
+</body>
+</html>

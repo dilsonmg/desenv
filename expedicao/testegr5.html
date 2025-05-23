@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+	/////////////////////////////////////////////// parametros do grafico //////////////////////////////////////
+ google.charts.load('current', {'packages':['corechart']});
+ google.charts.setOnLoadCallback(drawVisualization);
+
+function drawVisualization() {
+        var data = google.visualization.arrayToDataTable([
+          ['Ano', 
+		  '1250 - BACGRAN (1KG)',
+		  '1710 - DEFLOC QR (10KG)',
+		  '1711 - DEFLOC QR (1KG)',
+		  '2000 - FERMENTUM (10KG)',
+		  '1551 - HJ EMULSAO 100',
+		  '1552 - HJ EMULSAO 100 (REPROCESSO)',
+		  '1550 - HJ EMULSAO 150',
+		  '1554 - HJ EMULSAO 150 (REPROCESSO)',
+		  '1510 - HJ GOLD (10KG)',
+		  '1520 - HJ QR 100',
+		  '1833 - OX-GRAM QR 80 (10KG)',
+		  '1310 - SPECTRAN (10KG)',
+		  '1450 - VG50S QR (10KG)',
+		  ''],
+               ['2011',180.000,1200.000,6000.000,2400.000,0],['2012',1000.000,1200.000,2130.000,0],['2013',7120.000,3240.000,0],['2014',2300.000,7500.000,8400.000,1200.000,0],['2015',8000.000,30000.000,7200.000,1200.000,0],['2016',16000.000,500.000,25100.000,2113.000,6000.000,0],['2017',36600.000,58980.000,8400.000,0],['2018',36016.000,1413.000,44028.000,9600.000,670.000,0],['2019',2100.000,2.000,12500.000,146020.000,11240.000,600.000,0],['2020',2400.000,10000.000,113745.000,8400.000,830.000,1800.000,0],['2021',2100.000,64900.000,154000.000,11700.000,4800.000,3900.000,900.000,3300.000,0],        ]);
+
+
+        var options = {
+          title : 'Producao anual em KG por Linha de produto -  Elanco',
+          vAxis: {title: 'Totais'},
+          hAxis: {title: 'Ano'},
+          seriesType: 'bars',
+          series: {14: {type: 'line'}}
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+
+      }
+    </script>
+    </script>
+
+  </head>
+  <body>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sem título</title>
+<script>
+var editar = document.getElementById("editar");
+
+
+// No click verifico se o editar esta marcado e desativo os 
+// readOnly dos inputs type text
+editar.addEventListener("click", function() {
+  if (this.checked) {
+    toggleReadOnly(false);
+  } else {
+    toggleReadOnly(true);
+  }
+});
+
+// Percorro  os elementos inputs type text e habilito/desabilito
+function toggleReadOnly(bool) {
+  var inputs = document.getElementsByTagName("input");
+  for (var i = 0; i < inputs.length; i++) {
+    if (inputs[i].type === "text") {
+      inputs[i].readOnly = bool;
+    }
+  }
+}
+
+input[type=text]:-moz-read-only {
+  background-color: #dddddd;
+}
+input[type=text]:read-only {
+  background-color: #dddddd;
+}
+</script>
+</head>
+
+<body>
+
+
+<input readonly="" type="text" name="xx" value="">
+<input readonly="" type="text" name="xx" value="">
+<input readonly="" type="text" name="xx" value="">
+<label for="editar">Editar:</label>
+<input type="checkbox" name="check" value="sim" id="editar" />
+<input type="submit" value="Salvar Dados" />
+
+</body>
+</html>

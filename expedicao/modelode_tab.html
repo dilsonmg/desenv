@@ -1,0 +1,505 @@
+﻿<html>
+
+<head>
+
+    <title>Tab em Javascript</title>
+
+<style type="text/css">
+
+    .labelFormularioValor
+
+    {
+
+        font-family:Segoe UI, Tahoma, Sans-Serif;
+
+        font-size:10pt;
+
+        color:#000000;  
+
+    }       
+
+         
+
+    .contentTab
+
+    {
+
+        font-family:Segoe UI, Tahoma, Sans-Serif;
+
+        font-size:10pt;
+
+        color:#000000;  
+
+        font-weight:bold;
+
+    }              
+
+         
+
+    .divTab
+
+        {
+
+        border-right: #A0C0E7 1px solid; 
+
+        border-left: #A0C0E7 1px solid;  
+
+        border-bottom: #A0C0E7 1px solid;
+
+        background: -webkit-gradient(linear, left top, left bottom, from(#DFEEFF), to(#B4D4FF)); /* For Webkit Browsers */
+
+        background: -moz-linear-gradient(top, #DFEEFF, #B4D4FF); /* for Firefox */
+
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DFEEFF', endColorstr='#B4D4FF'); /* for IE */
+
+    }
+
+ 
+
+    .primeiraTab
+
+    {
+
+        border-left: #A0C0E7 1px solid;  
+
+        border-bottom: #A0C0E7 1px solid;
+
+        border-top: #A0C0E7 1px solid;  
+
+        background-color:#DFEEFF;
+
+        cursor:default;
+
+    }
+
+ 
+
+    .meioTab
+
+    {
+
+        border-left: #A0C0E7 1px solid; 
+
+        border-bottom: #A0C0E7 1px solid;
+
+        border-top: #A0C0E7 1px solid;  
+
+        background-color:#DFEEFF;
+
+        cursor:default;
+
+    }
+
+ 
+
+    .ultimaTab
+
+    {
+
+        border-left: #A0C0E7 1px solid; 
+
+        border-bottom: #A0C0E7 1px solid;
+
+        border-top: #A0C0E7 1px solid;  
+
+        background-color:#DFEEFF;
+
+        cursor:default;
+
+    }
+
+ 
+
+    .semTab
+
+    {
+
+        border-left: #A0C0E7 1px solid;
+
+        border-bottom: #A0C0E7 1px solid; 
+
+    }           
+
+</style>
+
+
+<script language="javascript">
+
+function setSize() {
+
+        var myWidth = 0, myHeight = 0;
+
+             
+
+        var objContentTab0 = document.getElementById('contentTab0');
+
+        var objContentTab1 = document.getElementById('contentTab1');
+
+        var objContentTab2 = document.getElementById('contentTab2');
+
+        var objContentTab3 = document.getElementById('contentTab3');
+
+        var objContentTab4 = document.getElementById('contentTab4');
+
+ 
+
+        if (typeof (window.innerWidth) == 'number') {
+
+            //Non-IE
+
+            myWidth = document.documentElement.clientWidth;
+
+            myHeight = window.innerHeight;
+
+        }
+
+        else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+
+            //IE 6+ in 'standards compliant mode'
+
+            myWidth = document.documentElement.clientWidth;
+
+            myHeight = document.documentElement.clientHeight;
+
+        }
+
+        else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+
+            //IE 4 compatible
+
+            myWidth = document.body.clientWidth;
+
+            myHeight = document.body.clientHeight;
+
+        }
+
+             
+
+        objContentTab0.style.height = (myHeight - 57) + 'px';
+
+        objContentTab1.style.height = (myHeight - 57) + 'px';
+
+        objContentTab2.style.height = (myHeight - 57) + 'px';
+
+        objContentTab3.style.height = (myHeight - 57) + 'px';
+
+        objContentTab4.style.height = (myHeight - 57) + 'px';
+
+    }
+
+ 
+
+    function selectionTab(value) {
+
+ 
+
+        var objTab0 = document.getElementById('tab0');
+
+        var objTab1 = document.getElementById('tab1');
+
+        var objTab2 = document.getElementById('tab2');
+
+        var objTab3 = document.getElementById('tab3');
+
+        var objTab4 = document.getElementById('tab4');
+
+ 
+
+        var objContentTab0 = document.getElementById('contentTab0');
+
+        var objContentTab1 = document.getElementById('contentTab1');
+
+        var objContentTab2 = document.getElementById('contentTab2');
+
+        var objContentTab3 = document.getElementById('contentTab3');
+
+        var objContentTab4 = document.getElementById('contentTab4');
+
+ 
+
+        objTab0.style.background = 'url(./Imagens/gridtoolbar_back.gif)';
+
+        objTab1.style.background = 'url(./Imagens/gridtoolbar_back.gif)';
+
+        objTab2.style.background = 'url(./Imagens/gridtoolbar_back.gif)';
+
+        objTab3.style.background = 'url(./Imagens/gridtoolbar_back.gif)';
+
+        objTab4.style.background = 'url(./Imagens/gridtoolbar_back.gif)';
+
+ 
+
+        objTab0.style.borderBottom = '#A0C0E7 1px solid';
+
+        objTab1.style.borderBottom = '#A0C0E7 1px solid';
+
+        objTab2.style.borderBottom = '#A0C0E7 1px solid';
+
+        objTab3.style.borderBottom = '#A0C0E7 1px solid';
+
+        objTab4.style.borderBottom = '#A0C0E7 1px solid';
+
+ 
+
+        objContentTab0.style.display = 'none';
+
+        objContentTab1.style.display = 'none';
+
+        objContentTab2.style.display = 'none';
+
+        objContentTab3.style.display = 'none';
+
+        objContentTab4.style.display = 'none';
+
+ 
+
+        if (value == "0") {
+
+            objTab0.style.background = '#DFEEFF';
+
+            objTab0.style.borderBottom = '0px';
+
+            objContentTab0.style.display = 'block';
+
+        }
+
+        else if (value == "1") {
+
+            objTab1.style.background = '#DFEEFF';
+
+            objTab1.style.borderBottom = '0px';
+
+            objContentTab1.style.display = 'block';
+
+        }
+
+        else if (value == "2") {
+
+            objTab2.style.background = '#DFEEFF';
+
+            objTab2.style.borderBottom = '0px';
+
+            objContentTab2.style.display = 'block';
+
+        }
+
+        else if (value == "3") {
+
+            objTab3.style.background = '#DFEEFF';
+
+            objTab3.style.borderBottom = '0px';
+
+            objContentTab3.style.display = 'block';
+
+        }
+
+        else if (value == "4") {
+
+            objTab4.style.background = '#DFEEFF';
+
+            objTab4.style.borderBottom = '0px';
+
+            objContentTab4.style.display = 'block';
+
+        }
+
+    }
+
+ 
+
+    //A função é executada quando a página é carregada.
+
+    //Colocando a altura das tags divs.
+
+    //Selecionando a tab.
+
+    function pageLoad() {
+
+        setSize();
+
+        selectionTab('0');
+
+    }
+
+ 
+
+    window.onload = pageLoad;
+
+    window.onresize = setSize;
+
+</script>
+
+
+
+
+</head>
+
+<body >
+
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+
+    <tr style="height:27px">
+
+        <td id="tab0" onclick="selectionTab('0');" style="width:15%;background:url(Imagens/gridtoolbar_back.gif);" class="primeiraTab" align="center">           
+
+            <label id="detalhesAlarmeTabLabel0" class="labelFormularioValor">Tab 1</label> 
+
+        </td>
+
+        <td id="tab1" onclick="selectionTab('1');" style="width:15%;background:url(Imagens/gridtoolbar_back.gif);" class="meioTab" align="center">           
+
+            <label id="detalhesAlarmeTabLabel1" class="labelFormularioValor">Tab 2</label> 
+
+        </td>
+
+        <td id="tab2" onclick="selectionTab('2');" style="width:15%;background:url(Imagens/gridtoolbar_back.gif);" class="meioTab" align="center">           
+
+            <label id="detalhesAlarmeTabLabel2" class="labelFormularioValor">Tab 3</label> 
+
+        </td>
+
+        <td id="tab3" onclick="selectionTab('3');" style="width:15%;background:url(Imagens/gridtoolbar_back.gif);" class="meioTab" align="center">           
+
+            <label id="detalhesAlarmeTabLabel3" class="labelFormularioValor">Tab 4</label> 
+
+        </td>
+
+        <td id="tab4" onclick="selectionTab('4');" style="width:15%;background:url(Imagens/gridtoolbar_back.gif);" class="ultimaTab" align="center">           
+
+            <label id="detalhesAlarmeTabLabel4" class="labelFormularioValor">Tab 5</label> 
+
+        </td>
+
+        <td class="semTab" style="width:25%">
+
+              
+
+        </td>
+
+        </tr>             
+
+        <tr style="height:27px">
+
+        <td align="center" colspan="6">   
+
+            <div id="contentTab0" class="divTab" style="overflow-y:auto;width:100%;display:none;">
+
+                <table border="0" style="width:99%;" align="center">
+
+                    <tr style="height:2px"><td></td></tr>
+
+                    <tr>
+
+                        <td align="left" class="contentTab">
+
+                            Conteúdo Tab 1<br />
+
+                            Tab em Javascript                             
+
+                        </td>
+
+                    </tr>
+
+                </table>                                            
+
+            </div>      
+
+            <div id="contentTab1" class="divTab" style="overflow-y:auto;width:100%;display:none;">
+
+                <table border="0" style="width:99%;" align="center">
+
+                    <tr style="height:2px"><td></td></tr>
+
+                    <tr>
+
+                        <td align="left" class="contentTab">
+
+                            Conteúdo Tab 2<br />
+
+                            Tab em Javascript                             
+
+                        </td>
+
+                    </tr>
+
+                </table>                                           
+
+            </div>  
+
+            <div id="contentTab2" class="divTab" style="overflow-y:auto;width:100%;display:none;">
+
+                <table border="0" style="width:99%;" align="center">
+
+                    <tr style="height:2px"><td></td></tr>
+
+                    <tr>
+
+                        <td align="left" class="contentTab">
+
+                            Conteúdo Tab 3<br />
+
+                            Tab em Javascript                             
+
+                        </td>
+
+                    </tr>
+
+                </table>                                             
+
+            </div>  
+
+            <div id="contentTab3" class="divTab" style="overflow-y:auto;width:100%;display:none;">
+
+                <table border="0" style="width:99%;" align="center">
+
+                    <tr style="height:2px"><td></td></tr>
+
+                    <tr>
+
+                        <td align="left" class="contentTab">
+
+                            Conteúdo Tab 4<br />
+
+                            Tab em Javascript                             
+
+                        </td>
+
+                    </tr>
+
+                </table>                                              
+
+            </div>  
+
+            <div id="contentTab4" class="divTab" style="overflow-y:auto;width:100%;display:none;">
+
+                <table border="0" style="width:99%;" align="center">
+
+                    <tr style="height:2px"><td></td></tr>
+
+                    <tr>
+
+                        <td align="left" class="contentTab">
+
+                            Conteúdo Tab 5<br />
+
+                            Tab em Javascript                             
+
+                        </td>
+
+                    </tr>
+
+                </table>                                             
+
+            </div>                                                      
+
+        </td>
+
+    </tr>   
+
+</table>
+
+</body>
+
+</html>
+
+

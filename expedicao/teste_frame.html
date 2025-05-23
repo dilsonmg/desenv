@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sem título</title>
+<script>
+    // Exemplo com JavaScript puro (sem jQuery)
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("conteudoDinamico").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET", "pagina_secundaria.html", true);
+    xhttp.send();
+</script>
+
+</head>
+
+<body>
+
+<!-- Conteúdo da Página Principal -->
+<div>
+    <h1>Página Principal</h1>
+    <div id="conteudoDinamico"> 
+        <p> teste pagina 1 </p>
+        <p> teste pagina 1 </p>
+        <p> teste pagina 1 </p>
+        <p> teste pagina 1 </p>
+        <object data="../index2.php" width="600" height="400" title="Página Secundária"></object>
+
+	    <div id="conteudoSecundario">
+            <p>Conteúdo da página secundária...</p>
+           <p>Conteúdo da página secundária...</p>
+           <p>Conteúdo da página secundária...</p>
+           <p>Conteúdo da página secundária...</p>
+           <p>Conteúdo da página secundária...</p>
+           <p>Conteúdo da página secundária...</p>
+
+		</div>
+    </div>
+
+</div>
+
+<!-- Conteúdo da Página Secundária -->
+
+</body>
+</html>

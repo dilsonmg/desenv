@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+	              ['Item', 'Meses Suprimento', { role: 'style' }], 
+
+  //      ["Element", "Density", { role: "style" } ],
+		
+		 ['HYFLO SUPER CEL CELITE                   - M.PRIMAS',4,'4'],
+		 ['ANTI ESPUMA (O-FOAM)                     - M.PRIMAS',3,'3'],
+		 ['PROPILENOGLICOL 100%                     - M.PRIMAS',1,'1'],
+		 ['LIOCIDE BT 20                            - M.PRIMAS',2,'2'],
+		 ['AGUA OXIGENADA PEROXIDO HIDROGENIO 50%   - M.PRIMAS',7,'7'],
+		 ['CLORETO DE ZINCO ANIDRO                  - M.PRIMAS',1,'1'],
+		 ['HIDROXIDO DE CALCIO                      - M.PRIMAS',4,'4'],
+		 ['RHEOSPERSE 144A                          - M.PRIMAS',1,'1'],
+		 ['IMBIBENTE GE/B                           - M.PRIMAS',1,'1'],
+		 ['LAURIL SULFATO DE SODIO 90%              - M.PRIMAS',1,'1'],
+		 ['LAURIL SULF. SODIO - ALKOPON NS ECO 92 N - M.PRIMAS',2,'2'],
+		 ['GOMA XANTANA 80 MESH                     - M.PRIMAS',1,'1'],
+		 ['KAMORAN INTERMEDIARIO                    - M.PRIMAS',1,'1'],
+		 ['DIOXIDO DE SILICIO 333                   - M.PRIMAS',4,'4'],
+		 ['PENICILINA V POTASSICA 98%               - M.PRIMAS',4,'4'],     ]);
+
+
+      var view = new google.visualization.DataView(data);
+      view.setColumns([0, 1,
+                       { calc: "stringify",
+                         sourceColumn: 1,
+                         type: "string",
+                         role: "annotation" },
+                       2]);
+
+    var options = {
+          title : 'Ressuprimento em até 12 meses - Ano de Referencia : <?php echo($anodf); ?>',
+          vAxis: {title: 'Itens'},
+          hAxis: {title: 'Meses'},
+          seriesType: 'bars',
+		   legend: { position: "none" },
+		  trendlines: {
+    0: {
+      type: 'linear',
+      color: 'green',
+      lineWidth: 3,
+      opacity: 0.3,
+      showR2: true,
+      visibleInLegend: true
+    }
+  },
+ hAxis: {title: 'Meses'},
+ bars: 'horizontal', // Required for Material Bar Charts.
+ bar: { groupWidth: '95%' },
+ width: 950,
+ height: 650,
+ series: {6: {
+ type: 'line',
+ fontSize: 12}
+ }
+};
+  
+      var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+      chart.draw(view, options);
+  }
+  </script>
+  </head>
+  <body>
+    <div id="barchart_values" style="width: 950px; height: 650px;"></div>
+  </body>
+</html>

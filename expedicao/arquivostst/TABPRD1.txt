@@ -1,0 +1,310 @@
+1000	BIONAT-100                              
+1100	TOPMIX (1KG)                            
+1102	TOPMIX (FRASCO)                         
+1110	TOPMIX (10KG)                           
+1200	EL-02 (450 GR)                          
+1202	EL-02 (FRASCO)                          
+1250	BACGRAN (1KG)                           
+1260	BACGRAN (500GR)                         
+1300	SPECTRAN 100E (1KG)                     
+1302	SPECTRAN 100E (FRASCO)                  
+1310	SPECTRAN 100E (10KG)                    
+1332	CORSTAN (FRASCO)                        
+1400	ELANCELL (1KG)                          
+1420	ELANCELL (20KG)                         
+1421	ELANCELL (5KG)                          
+1500	HJ GOLD (1KG)                           
+1502	HJ GOLD (FRASCO)                        
+1510	HJ GOLD (10KG)                          
+1511	HJ GOLD (10KG) REPROCESSO               
+1550	HJ EMULSAO 150                          
+1551	HJ EMULSAO 100                          
+1553	HJ EMULSAO                              
+1560	HJ LIQUIDO KG                           
+1561	HJ LIQUIDO                              
+1600	SACCHARAN (100GR)                       
+1601	SACCHARAN (1KG)                         
+1602	SACCHARAN (10KG)                        
+1700	DEFLOC-QR (10KG)                        
+1701	DEFLOC-QR (1KG)                         
+1800	VIP-QR (10KG)                           
+1850	VIP-QR 50 (10KG)                        
+1851	VIP-QR 50 (1KG)                         
+1900	CHL-QR (10KG)                           
+1990	FERMENTUM (1KG)                         
+2000	FERMENTUM (10KG)                        
+3074	CORSTAN 1KG                             
+3269	KAMORAN 10 KG                           
+3274	CORSTAN 10 KG                           
+3277	KAMORAN WP 10 KG                        
+4269	KAMORAN 10 KG TERCEIROS                 
+4274	CORSTAN 10 KG TERCEIROS                 
+4277	KAMORAN WP 10 KG TERCEIROS              
+4998	KAMORAN 10 KG TERCEIROS MAO DE OBRA     
+4999	INDUSTRIALIZACAO DE MATERIA-PRIMA       
+8601	SPEC-01                                 
+8602	SPEC-02                                 
+8603	SPEC-03                                 
+8604	SPEC-04                                 
+8605	SPECTRAN EST                            
+8606	SPECTRAN NEO                            
+8800	HJ EMULSAO                              
+8801	HJ EMULSAO 01                           
+8802	HJ EMULSAO 02                           
+8803	HJ EMULSAO 03                           
+8804	HJ EMULSAO 04                           
+8805	HJ EMULSAO 05                           
+8806	HJ EMULSAO 06                           
+8807	HJ EMULSAO 07                           
+8808	HJ EMULSAO 08                           
+8809	HJ EMULSAO 09                           
+8810	HJ EMULSAO 10                           
+8811	HJ EMULSAO 11                           
+8812	HJ EMULSAO 12                           
+8813	HJ EMULSAO 13                           
+8814	HJ EMULSAO 14                           
+8815	HJ EMULSAO 15                           
+8816	HJ EMULSAO 16                           
+8817	HJ EMULSAO 17                           
+8818	HJ EMULSAO 18                           
+8819	HJ EMULSAO 19                           
+8820	HJ EMULSAO 20                           
+8821	HJ EMULSAO 21                           
+8822	HJ EMULSAO 22                           
+8823	HJ EMULSAO 23                           
+8824	HJ EMULSAO 24                           
+8825	HJ EMULSAO 25                           
+8826	HJ EMULSAO 26                           
+8827	HJ EMULSAO 27                           
+8828	HJ EMULSAO 28                           
+10650	OXATIL QR650                            
+10660	OXATIL QR660 BA                         
+10700	OXATIL QR620 AP                         
+10800	OXATIL QR630                            
+11000	BIOXATIL QR70 HIBRIDO                   
+11010	BIOXATIL QR71 PLUS AP                   
+11020	BIOXATIL QR72 PLUS                      
+11700	BIOXATIL QR700 BA                       
+11710	BIOXATIL QR710 BA                       
+12010	OXATIL QR62 AP                          
+80001	TEXAPON IND TERCEIROS                   
+80002	TIXOSIL IND TERCEIROS                   
+80100	EMBALAGENS IND TERCEIROS                
+100001	TENSAPOL L 61                           
+100002	ETANOL                                  
+100005	ACIDO CINAMICO 99%                      
+100006	ACIDO 3 NITRO - ROXARSONE               
+100010	AGUA POTAVEL                            
+100015	OLEO DE SOJA REFINADO                   
+100016	NEOMICINA SULFATO MICRONIZADO           
+100017	ESTREPTOMICINA SULFATO 98%              
+100025	PRAIDMUL EBSA                           
+100030	FORMOL EST 37%                          
+100035	PMX 0156 SILANOL FLUID 200              
+100045	PERKASIL SM 660                         
+100050	PROPILENOGLICOL 100%                    
+100052	SIPERNAT 22                             
+100058	QUATERCAP L-100                         
+100060	AGUA OXIGENADA PEROXIDO HIDROGENIO 50%  
+100069	PROCESSADO KAMORAN (REPROCESSO)         
+100075	FLUENT CANE 113                         
+100080	FLUENT CANE 149                         
+100085	K-120                                   
+100100	PROCESSADO TOPMIX (REPROCESSO)          
+100101	TENSAPOL L 101                          
+100103	ADDTICH HIBRIDO W103                    
+100104	ADDTICH DISPERSANTE W104                
+100105	ADDTICH ANTIESPUMANTE W105              
+100110	POLIOL POLIETER ARCOL F-3040            
+100112	POLIOL PPG 1000                         
+100121	CLORIDRATO DE CLOREXIDINA 98 A 99%      
+100137	TEXAPON ZACD LAURIL SULF.SODIO 90%      
+100151	OXITETRACICLINA BASE 98%                
+100160	GOMA XANTANA                            
+100165	ULTRANEX NP 60                          
+100170	ULTRANEX NP 95                          
+100175	AMIDA 90                                
+100180	REXAPON 165                             
+100185	CLORETO BENZALCONIO 50%                 
+100200	DEGRESSAL AL 450                        
+100210	SOKALAN AL 512 S                        
+100220	1000 NS50096 - PROTEASE ACIDA           
+100231	TYLAN PREMIX G-250                      
+100253	KAMORAN INTERMEDIARIO                   
+100263	KAMORAN INTERMEDIARIO TERCEIROS         
+100269	KAMORAN                                 
+100277	KAMORAN WP                              
+100280	PROCESSADO FERMENTUM (REPROCESSO)       
+100300	SORBITOL 70%                            
+100301	CORSTAN                                 
+100302	SURMAX 100                              
+100304	AGRHO BR 012                            
+100305	AGRHO BR 013 - A                        
+100306	AGRHO BR 013 - B                        
+100307	FERMOCEL                                
+100320	GEROPON SDS                             
+100322	APRALAN SOLUVEL                         
+100330	"HIPOCLORITO DE SODIO 2,5%               "
+100340	PROCESSADO OXATIL QR630 (REPROCESSO)    
+100350	TYLAN SOLUVEL                           
+100402	SULFATO APRAMICINA FLUID SECO           
+100421	ELANCELL                                
+100786	EXTRATO DE SEMENTE POMELO               
+100800	MONENSINA GRANULADA                     
+100820	RUMENSIN GRANULAR                       
+100834	VIRGINIAMICINA 98%                      
+100835	VIRGINIAMICINA 50% / STAFAC 500         
+100836	TIXOSIL 333                             
+100837	MASTER LEITE                            
+100838	MONENSINA SODICA 40%                    
+100868	PENICILINA V POTASSICA 98%              
+150480	FERMOPLUS DESTILLER MZ                  
+150481	FERMOL DESTILLER MZ                     
+190000	SACHE 500 ML                            
+190001	"SACO ZIP 5X7X0,008                      "
+190002	"FITA TEFLON PURO BRANCO 40MMX0,5MMX20M  "
+190003	CORREIA EMBORRACHADA 682X40(CINZA)      
+190004	RIBBON VR.CERA RESINA MED. (165X450)MM  
+190005	ETIQ. BOPP ADESIVO MED.(150X300)MM T    
+190010	CAIXA ISOPOR 1/2 LT                     
+190011	CAIXA ISOPOR 12 LTS                     
+190012	CAIXA ISOPOR 9 LT                       
+190013	CAIXA ISOPOR 40 LT                      
+190015	CAIXA PAPELAO EXPORTACAO KIT SP01       
+190020	SACO PLASTICO 15X25X0.10                
+190021	SACO PLASTICO 40X60X0.20                
+190022	SACO PLASTICO 90X150X0.15               
+190030	SACOLAS PLASTICAS FRONTLINE             
+190035	PET CRISTAL 100ML TAMPA LACRE 28        
+190040	CAIXA PAPELAO SEDEX TIMBRADA GRD.       
+190041	CLICHE 01 COR CAIXA TIMBRADA            
+190042	CAIXA PAPELAO SEDEX TIMBRADA PEQ.03.    
+190045	COLA BRANCA                             
+190050	FITA PLASTICA BRANCA MERIAL 50X5        
+190055	COLA 90 GRAMAS                          
+190060	LACRE PLASTICO 26CM PERSONALIZADO AZUL  
+190090	BOMBONA 20LTS RECONDICIONADA            
+190092	BOMBONA 25LTS RECONDICIONADA            
+190095	BOMBONA 50LTS RECONDICIONADA            
+190100	FILME STRETCH 5.0                       
+190101	FILME HIDROSSOLUVEL                     
+190102	BOBINA FILME HIDROSSOLUVEL KA 40 AICELLO
+190103	FITA TEFLON FIBRA VIDRO MARROM 60MMX30MX
+190104	"FITA TEFLON ADES PTFE PURO ESP 0,5X40X15"
+190108	BOMBONA 50KG (NOVA)                     
+190109	PET 28 AMBAR 100 ML PLASTICO TAMPA LACRE
+190110	SACO PLASTICO 30X50X0.20                
+190111	PET 28 AMBAR 100 ML PLASTICO SEM TAMPA  
+190112	VIDRO AMBAR 100ML C/BOCA 24             
+190113	BATOQUE P/100 ML 16.5                   
+190114	TAMPA 24 PRETA                          
+190115	BOMBONA 25LTS PE NATURAL HOMOL TERRESTRE
+190116	BOMBONA 25LTS AZUL HOMOL MAR/TER C/ TAMP
+190123	ACETONA                                 
+190124	BOMBONA 200LTS RECONDICIONADA           
+190126	BOMBONA 25LTS PE AZUL HOMOL TER - 1300GR
+190127	BOBINA FILME HIDROSSOLUVEL M.IMPEX      
+190130	ABRACADEIRA                             
+190140	DOSADOR P/SACCHARAN                     
+190141	TAMPA TES 28 LC ALT PRETA               
+190145	TAMPA AGRO 63 REF AZUL C/VALVULA GORE 17
+190150	"SACO DE POLIETILENO LISO 80X150X0,40    "
+190155	"SACO PLASTICO REFORCADO 80X100X,016 100L"
+190160	IBC RMX 1000LT PALETE ACO VALV BORBOLETA
+190170	ROTULO CAIXA 3PPM                       
+190180	BOBINA HIDROSSOLUVEL VF H6 35 MICRAS    
+190200	EMBALAGEM AMOSTRA 43050                 
+190201	POTE AMOSTRA 43050                      
+190230	CAIXA PAPELAO TIPO EXPORTACAO SP24 4GV  
+190300	FITA ADESIVA QUIMICA REAL 50MMX100M     
+190310	ETIQUETA LASER (PIMACO) N?1 REF. 6185   
+190311	ETIQUETA PERSONALIZADA QR 18X69         
+190312	POTE 250ML TRANSPARENTE PRAFESTA        
+190313	POTE AMOSTRA 31025/CAP 31 25GRS C/TAMPA 
+190314	ETIQUETA TERM COD BARRA 105X105MM RL500 
+190315	ETIQUETA TERM TP 80 60X40MM ROLO 550    
+190400	BIG BAG                                 
+190401	BULA KAMORAN WP 500G                    
+190402	CAIXA PAPELAO KAMORAN                   
+190403	CAIXA PAPELAO KAMORAN WP                
+190404	CAIXA PAPELAO CORSTAN                   
+190405	SACO PE LEI I KAMORAN ZIP BAG IMPRESSO  
+190406	SACO PE LEI I KAMORAN WP ZIP BAG IMPRESS
+190407	SACO PE LEI I CORSTAN ZIP BAG IMPRESSO  
+190408	SACO PE LEI I S/ZIP KAMORAN - EXPORTACAO
+190409	"SACO AMOSTRA PEBD TRANSP.IMP 17X28X0,18 "
+190410	BULA KAMORAN                            
+190411	CAIXA PAPELAO EXPORTACAO SP50 20KG      
+190412	CX PAPELAO EXPORTACAO SP50 20KG TERCEIRO
+190413	CAIXA PAPELAO KAMORAN REPROCESSADA      
+190501	POTE DE 500ML PRAFESTA                  
+190900	ROTULO EM BRANCO                        
+191009	ROTULO ELANCELL                         
+191010	ROTULO BACGRAN                          
+191011	ROTULO CHL QR                           
+191012	ROTULO VIP QR 50                        
+191013	ROTULO TOPMIX                           
+191014	ROTULO EL 02                            
+191015	ROTULO SPECTRAN                         
+191016	ROTULO FERMENTUM                        
+191019	ROTULO VIP QR                           
+191020	ROTULO HJ GOLD                          
+191021	ROTULO FERMENTUM (NAO USAR)             
+191050	CONTAINER 1000 LT (RECUPERADO)          
+191055	CONTAINER 1000 LT (RECUPERADO) BASF     
+191060	"PALETE PBR 1,00x1,20x13,5CM FUMIGADO    "
+191100	SACO PE LEI I TOPMIX                    
+191110	EMBALAGEM TOPMIX EL-01 CX 10            
+191120	SACO PE LEI I HJ GOLD S/ZIP             
+191130	SACARIA SACCHARAN 500 GR                
+191140	SACO PE LEI I SPECTRAN S/ZIP            
+191150	SACO PE LEI I VIP QR                    
+191160	SACO PE LEI I BACGRAN                   
+191190	SACO PE LEI I CHL - QR                  
+191191	SACO PE LEI I VIP QR 50                 
+191192	SACO PE LEI I KG QR - FERMENTUM         
+191200	POTE EL-02 450 GRS                      
+191210	ABRACADEIRA P/EMBALAGENS                
+191250	EMBALAGEM BACGRAN (1KG)                 
+191260	POTE BACGRAN (500GR)                    
+191300	CAIXA TIMBRADA 10 KG                    
+191301	CAIXA DE PAPELAO HJ GOLD                
+191310	EMBALAGEM SPECTRAN CX 10 KG             
+191315	"BOBINA PAPEL KRAFT 0,40M                "
+191400	SACHE 500ML                             
+191420	EMBALAGEM ELANCELL SC 20 KG             
+191500	CAIXA ISOPOR PM1810 40 L                
+191501	EMBALAGEM AMOSTRA 43050                 
+191502	EMBALAGEM AMOSTRA 951000                
+191503	CAIXA ISOPOR 3L                         
+191504	CAIXA ISOPOR 1/2 L                      
+191505	CAIXA PAPELAO EXPORTACAO SP24 4GV       
+191510	EMBALAGEM HJ GOLD 10 KG                 
+191600	POTE SACCHARAN 100 GRS                  
+191601	EMBALAGEM SACCHARAN 1 KG                
+191602	EMBALAGEM SACCHARAN 10 KG               
+191690	"SACO PL BD LEITOSO TRATADO 21X32X0,10   "
+191699	ROTULO CX EMBALAGEM FITA                
+191700	"SACO PLASTICO LEITOSO TRATADO 21X32X0,10"
+191701	EMBALAGEM DEFLOC-QR1                    
+191702	"SACO PLASTICO LEITOSO 40x60x0,15        "
+191710	SACO PLASTICO 30X50X0.10                
+191800	EMBALAGEM VIP - QR 10 KG                
+191850	EMBALAGEM VIP QR 50 - 10 KG             
+191851	EMBALAGEM VIP QR 50 - 1 KG              
+191900	EMBALAGEM CHL-QR 500 GR                 
+192000	EMBALAGEM KG QR - 10 KG                 
+193000	M.D.O.                                  
+194000	CONTENTOR DE POLIET 1050L (BASF)        
+199480	VAGO                                    
+199481	"SACO POLIETILENO 65X1,20X1,50           "
+400269	KAMORAN 10 KG                           
+400270	KAMORAN 1 KG                            
+400271	KAMORAN 500 GR                          
+400274	CORSTAN 10 KG                           
+400277	KAMORAN WP 10 KG                        
+400301	CORSTAN 1 KG                            
+400302	SURMAX 100                              
+702020	BETABIO 45 - EXTRATO LUPULO             
+702021	BETABIO 45 - EXTRATO LUPULO             
+190070	"LACRE METALICO BOMBONA 2 1/2"" PERSONALIZ"

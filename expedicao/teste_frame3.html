@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Link em Outra Div</title>
+    <style>
+        .div1 {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .div2 {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+        <p>Conteúdo da div 1</p>
+        <a href="login.php" target="_blank" onclick="abrirLink()">Abrir Link</a>
+    </div>
+
+    <div class="div2">
+        <p>Conteúdo da div 2</p>
+    </div>
+
+    <script>
+        function abrirLink() {
+            // Obter o link
+            var link = document.querySelector('.div1 a');
+
+            // Obter o conteúdo da div 2
+            var div2Content = document.querySelector('.div2');
+
+            // Atualizar o conteúdo da div 2 com o conteúdo do link
+            div2Content.innerHTML = '<p>Conteúdo da div 2</p>' + link.outerHTML;
+
+            // Impedir o comportamento padrão do link
+            event.preventDefault();
+        }
+    </script>
+
+</body>
+</html>

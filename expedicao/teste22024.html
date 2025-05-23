@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abas PHP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .active-tab {
+            display: block;
+        }
+
+        .tab {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f2f2f2;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<?php
+// Nomes das abas
+$abas = array("Aba 1", "Aba 2", "Aba 3");
+
+// Mostra as abas
+foreach ($abas as $index => $aba) {
+    echo '<div class="tab" onclick="showTab(' . $index . ')">' . $aba . '</div>';
+}
+
+// Conteúdo das abas
+$conteudos = array(
+    "Conteúdo da Aba 1",
+    "Conteúdo da Aba 2",
+    "Conteúdo da Aba 3"
+);
+
+// Mostra o conteúdo das abas
+foreach ($conteudos as $index => $conteudo) {
+    echo '<div class="tab-content" id="tab' . $index . '">' . $conteudo . '</div>';
+}
+?>
+
+<script>
+    function showTab(tabIndex) {
+        // Esconde todos os conteúdos das abas
+        var tabContents = document.getElementsByClassName('tab-content');
+        for (var i = 0; i < tabContents.length; i++) {
+            tabContents[i].style.display = 'none';
+        }
+
+        // Mostra o conteúdo da aba clicada
+        document.getElementById('tab' + tabIndex).style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

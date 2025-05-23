@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<meta name="robots" content="noindex" />
+<meta name="googlebot" content="noindex" />
+<meta name="googlebot-news" content="noindex" />
+<meta name="googlebot" content="noindex">
+<meta name="googlebot-news" content="nosnippet">
+
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<head>
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecod.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+	<title>MATPAC_custo_prod_anua2d - Custos Indiretos por Ano</title>
+    <link rel="stylesheet" href="../css/qreal.css">
+	<script type='text/javascript' src="../js/func.js"   charset="ISO-8859-1"></script>
+   
+<script>   
+/*
+if (window.opener && !window.opener.closed) {
+			window.opener.location.reload();}
+*/
+function atualiza(){
+	//$_POST["Pesquisar"]
+	document.getElementById(Pesquisar).value='S';
+   document.form1.submit();	
+}
+			
+
+function setFocus(focoreb) {
+
+  document.getElementById(focoreb).focus(); 
+}
+
+  function sair2()
+  {	      // document.location.href='excluieq.asp'
+			document.form1.action="menu_custo.php";
+			document.form1.submit();  
+			return true;
+  
+  }
+
+</script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  
+</head> 
+<body> 
+<center>
+<form name="form1" method="post" enctype="multipart/form-data"> 
+<input type="hidden" name="id" value="">
+<input type="hidden" name="saldo_anterior" value="">
+<input readonly type=hidden name=x size=3 maxlength=3 value="250">
+
+<table width="99%" border="0">
+      <tr>
+        <th align="left" ><img src="../imagens/logoqrred.jpg" border="0"></th>
+        <th align="center" ><h1>Custos Indiretos Mensais por Ano -
+2022      </h1></th>
+        <th align="right"><img src="../imagens/tecladoclaro.png" >
+        <a  href=javascript:window.print()><img border="0" src="../imagens/print.png"    title="Imprimir"></a>
+        <br> 04/01/2023        </th>
+      </tr>
+    </table>
+      <table width="99%" border="0">
+
+      
+            <tr >
+       
+              <th  align="center">Ano                <input type="text" name="ano_2" id="ano_2" maxlenght="4" size=8  value = "2022"  class="search-input3"  onChange="atualiza();"/></th>
+
+              <th  align="center">
+              <input name="Pesquisar" type="submit" value="Pesquisar"  class="search-submit2">
+              <input type="button" onClick="sair2();" value="Sair" class="search-submit2"></th>
+        </tr>           
+    </table>     
+
+
+    
+<table width='95%'><tr  bgcolor='#D2D2FF' ><tr bgcolor=#DDDDFF><td align=right>Jan</td><td align=right>Fev</td><td align=right>Mar</td><td align=right>Abr</td><td align=right>Mai</td><td align=right>Jun</td><td align=right>Jul</td><td align=right>Ago</td><td align=right>Set</td><td align=right>Out</td><td align=right>Nov</td><td align=right>Dez</td><td align=right>Total</td></tr><tr><td align=right>233.216,38</td><td align=right>2.368.089,96</td><td align=right>348.071,72</td><td align=right>232.480,47</td><td align=right>259.150,72</td><td align=right>215.086,18</td><td align=right>0,00</td><td align=right>0,00</td><td align=right>0,00</td><td align=right>0,00</td><td align=right>0,00</td><td align=right>0,00</td><td align=right>3.656.095,43</td></tr >
+
+<br />  
+  <script type="text/javascript">
+
+/////////////////////////////////////////////// parametros do grafico //////////////////////////////////////
+
+
+
+/////////////////////////////////////////////// parametros do grafico //////////////////////////////////////
+google.charts.load('current', {'packages':['bar']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Item', 'consumo','Saldo','Pto Min'],
+               ['HYFLO SUPER CEL CELITE                  ',4.994,0.000,0],
+			   ['HYFLO SUPER CEL CELITE                  ',328.616,0.000,0],
+			   ['HYFLO SUPER CEL CELITE                  ',760.112,0.000,0],
+			   ['HYFLO SUPER CEL CELITE                  ',975.86,0.000,0],
+			   ['HYFLO SUPER CEL CELITE                  ',1407.356,0.000,0],
+			   ['HYFLO SUPER CEL CELITE                  ',1838.852,0.000,0],
+			   ['HYFLO SUPER CEL CELITE                  ',2019.142,0.000,0],
+			   ['ACIDO SULFURICO 98%                     ',10.8,38.497,0],
+			   ['ACIDO SULFURICO 98%                     ',16.2,38.497,0],
+			   ['ACIDO SULFURICO 98%                     ',42.3,38.497,0],
+			   ['ANTI ESPUMA (O-FOAM)                    ',0.8,0.311,0],
+			   ['ANTI ESPUMA (O-FOAM)                    ',6.4,0.311,0],
+			   ['ANTI ESPUMA (O-FOAM)                    ',13.601,0.311,0],
+			   ['ANTI ESPUMA (O-FOAM)                    ',20.004,0.311,0],
+			   ['ANTI ESPUMA (O-FOAM)                    ',26.004,0.311,0],
+			   ['ANTI ESPUMA (O-FOAM)                    ',39.204,0.311,0],
+			   ['ANTI ESPUMA (O-FOAM)                    ',47.405,0.311,0],
+			   ['GEROPON T 36                            ',210,0.000,320000],
+			   ['GEROPON T 36                            ',300,0.000,320000],
+			   ['GEROPON T 36                            ',765.09,0.000,320000],
+			   ['TERSPERSE 2700                          ',80,339.950,0],
+			   ['TERSPERSE 2700                          ',280,339.950,0],
+			   ['TERSPERSE 2700                          ',400,339.950,0],
+			   ['TERSPERSE 2700                          ',460,339.950,0],
+			   ['TERSPERSE 2700                          ',700,339.950,0],
+			   ['TERSPERSE 2700                          ',940,339.950,0],
+			   ['TERSPERSE 2700                          ',1180,339.950,0],
+			   ['RHODOPOL 23                             ',7.8,0.000,26000],
+			   ['RHODOPOL 23                             ',62.4,0.000,26000],
+			   ['RHODOPOL 23                             ',69.907,0.000,26000],
+			   ['PROPILENOGLICOL 100%                    ',4,101.550,0],
+			   ['PROPILENOGLICOL 100%                    ',32,101.550,0],
+			   ['PROPILENOGLICOL 100%                    ',68.005,101.550,0],
+			   ['PROPILENOGLICOL 100%                    ',100.025,101.550,0],
+			   ['PROPILENOGLICOL 100%                    ',130.025,101.550,0],
+			   ['PROPILENOGLICOL 100%                    ',206.025,101.550,0],
+			   ['PROPILENOGLICOL 100%                    ',247.03,101.550,0],
+			   ['LIOCIDE BT 20                           ',6.8,17.765,0],
+			   ['LIOCIDE BT 20                           ',54.4,17.765,0],
+			   ['LIOCIDE BT 20                           ',115.608,17.765,0],
+			   ['LIOCIDE BT 20                           ',170.042,17.765,0],
+			   ['LIOCIDE BT 20                           ',221.042,17.765,0],
+			   ['LIOCIDE BT 20                           ',333.242,17.765,0],
+			   ['LIOCIDE BT 20                           ',402.95,17.765,0],
+			   ['AGUA OXIGENADA PEROXIDO HIDROGENIO 50%  ',40,500.400,0],
+			   ['AGUA OXIGENADA PEROXIDO HIDROGENIO 50%  ',80,500.400,0],
+			   ['CLORETO DE ZINCO ANIDRO                 ',8.286,110.172,0],
+			   ['CLORETO DE ZINCO ANIDRO                 ',717.17,110.172,0],
+			   ['CLORETO DE ZINCO ANIDRO                 ',1647.17,110.172,0],
+			   ['CLORETO DE ZINCO ANIDRO                 ',2114.77,110.172,0],
+			   ['CLORETO DE ZINCO ANIDRO                 ',2931.17,110.172,0],
+			   ['CLORETO DE ZINCO ANIDRO                 ',3772.17,110.172,0],
+			   ['CLORETO DE ZINCO ANIDRO                 ',4136.998,110.172,0],
+			   ['HIDROXIDO DE CALCIO                     ',1.72,453.321,0],
+			   ['HIDROXIDO DE CALCIO                     ',113.176,453.321,0],
+			   ['HIDROXIDO DE CALCIO                     ',261.784,453.321,0],
+			   ['HIDROXIDO DE CALCIO                     ',336.088,453.321,0],
+			   ['HIDROXIDO DE CALCIO                     ',484.696,453.321,0],
+			   ['HIDROXIDO DE CALCIO                     ',633.304,453.321,0],
+			   ['HIDROXIDO DE CALCIO                     ',695.396,453.321,0],
+			   ['SAPONINA LIQUIDA                        ',20,2154.085,0],
+			   ['SAPONINA LIQUIDA                        ',90,2154.085,0],
+			   ['POWERBLOX SP-20                         ',0.45,0.000,0],
+			   ['COADIS 144A                             ',180,878.520,0],
+			   ['COADIS 144A                             ',1380.2,878.520,0],
+			   ['COADIS 144A                             ',2460.88,878.520,0],
+			   ['COADIS 144A                             ',3180.88,878.520,0],
+			   ['COADIS 144A                             ',4920.88,878.520,0],
+			   ['COADIS 144A                             ',4921.08,878.520,0],
+			   ['DISPERMOL SK                            ',1.02,0.000,0],
+			   ['KELZAN ADVANCED PERFORMANCE             ',0.2,0.000,0],
+			   ['IMBIBENTE GE/B                          ',21.4,297.477,0],
+			   ['IMBIBENTE GE/B                          ',167,297.477,0],
+			   ['IMBIBENTE GE/B                          ',359.627,297.477,0],
+			   ['IMBIBENTE GE/B                          ',526.729,297.477,0],
+			   ['IMBIBENTE GE/B                          ',687.229,297.477,0],
+			   ['IMBIBENTE GE/B                          ',1031.929,297.477,0],
+			   ['IMBIBENTE GE/B                          ',1243.256,297.477,0],
+			   ['LAURIL SULFATO DE SODIO 90%             ',752.56,1483.000,500000],
+			   ['LAURIL SULFATO DE SODIO 90%             ',1083.76,1483.000,500000],
+			   ['LAURIL SULFATO DE SODIO 90%             ',1194.16,1483.000,500000],
+			   ['LAURIL SULFATO DE SODIO 90%             ',1782.16,1483.000,500000],
+			   ['LAURIL SULF. SODIO - ALKOPON NS ECO 92 N',1750,2894.800,0],
+			   ['LAURIL SULF. SODIO - ALKOPON NS ECO 92 N',2680,2894.800,0],
+			   ['LAURIL SULF. SODIO - ALKOPON NS ECO 92 N',2725.4,2894.800,0],
+			   ['LAURIL SULF. SODIO - ALKOPON NS ECO 92 N',3159.8,2894.800,0],
+			   ['LAURIL SULF. SODIO - ALKOPON NS ECO 92 N',6830.2,2894.800,0],
+			   ['LAURIL SULFATO DE SODIO NAT             ',127.8,-0.020,0],
+			   ['LAURIL SULF. SODIO ALKOPON MOIDO        ',534,0.000,0],
+			   ['LAURIL SULF. SODIO ALKOPON MOIDO        ',1002.6,0.000,0],
+			   ['LAURIL SULF. SODIO ALKOPON MOIDO        ',1689,0.000,0],
+			   ['LAURIL SULF. SODIO ALKOPON MOIDO        ',2193.2,0.000,0],       ]);
+
+
+        var options = {
+          title : 'Producao anual em KG por Linha de produto -  ELANCO-',
+          vAxis: {title: 'Totais'},
+          hAxis: {title: 'Ano'},
+          seriesType: 'bars',
+          series: {2: {type: 'line'}}
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('chart_div'));
+       chart.draw(data, google.charts.Bar.convertOptions(options));
+
+      }
+	  ///////////////////////////////////////////////////
+
+	  /////////////////////////////////////////////////
+    </script>
+    
+</form> 
